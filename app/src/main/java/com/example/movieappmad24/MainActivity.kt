@@ -18,7 +18,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.KeyboardArrowDown
@@ -31,7 +30,6 @@ import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -76,15 +74,7 @@ class MainActivity : ComponentActivity() {
                             colors = TopAppBarDefaults.topAppBarColors(
                                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                                 titleContentColor = MaterialTheme.colorScheme.primary
-                            ),
-                            navigationIcon = {
-                                IconButton(onClick = { /* do something */ }) {
-                                    Icon(
-                                        imageVector = Icons.Filled.ArrowBack,
-                                        contentDescription = "Go back"
-                                    )
-                                }
-                            },
+                            )
                         )
                     },
                     bottomBar = {
